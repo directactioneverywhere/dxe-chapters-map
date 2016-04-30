@@ -15,7 +15,7 @@ Ensure that some environment variables required by dxe-airtable are set.
 * `AIRTABLE_API_KEY`
 * `AIRTABLE_BASE_ID`
 
-Then you can run the server with `python map/app.py`.
+Then you can run the server with `python dxe_chapters_map/server.py`.
 
 Deployment
 ----------

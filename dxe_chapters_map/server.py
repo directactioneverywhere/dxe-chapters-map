@@ -5,7 +5,7 @@ import json
 app = Flask(__name__)
 
 
-@app.route("/")
+@app.route('/')
 def index():
     return render_template('index.html')
 
@@ -16,5 +16,5 @@ def chapter_data():
     data = json.dumps(get_chapter_data())
     return Response(data, status=200, mimetype='application/json')
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     app.run()
