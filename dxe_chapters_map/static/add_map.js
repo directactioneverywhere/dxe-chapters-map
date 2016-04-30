@@ -6,14 +6,14 @@ $(function(){
       mapTypeId: google.maps.MapTypeId.ROADMAP,
       styles:
         [{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#5e5e5e"}]},{"featureType":"administrative","elementType":"labels.text","stylers":[{"hue":"#ff0000"}]},{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#612020"},{"weight":"6.40"}]},{"featureType":"administrative","elementType":"labels.text.stroke","stylers":[{"color":"#939292"},{"weight":"3.00"},{"lightness":"-15"}]},{"featureType":"administrative.country","elementType":"geometry.fill","stylers":[{"hue":"#ff0000"},{"visibility":"on"}]},{"featureType":"administrative.country","elementType":"geometry.stroke","stylers":[{"hue":"#ff0000"},{"visibility":"on"}]},{"featureType":"administrative.land_parcel","elementType":"geometry.fill","stylers":[{"color":"#ffffff"},{"visibility":"on"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"landscape","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#5e5e5e"},{"weight":"1"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45},{"visibility":"simplified"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#46bcec"},{"visibility":"on"}]},{"featureType":"water","elementType":"geometry.fill","stylers":[{"color":"#282828"}]},{"featureType":"water","elementType":"labels.text","stylers":[{"visibility":"off"}]}]
-// this theme: https://snazzymaps.com/style/40892/dxe-map
+        // this theme: https://snazzymaps.com/style/40892/dxe-map
     };
 
     var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 
     var infowindow = new google.maps.InfoWindow({});
 
-    $.getJSON("chapter_data.json", function(data){
+    $.getJSON("/chapter_data.json", function(data){
       $.each(data, function(i, chapter){
 
         var contactString = "<li>Email the <a href='mailto:mentoring@directactioneverywhere.com'>mentoring network</a> to be put in contact!</li>";

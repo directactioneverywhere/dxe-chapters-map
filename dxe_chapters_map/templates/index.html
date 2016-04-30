@@ -1,46 +1,18 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
-    <meta content="utf-8" http-equiv="encoding">
-    <link href='https://fonts.googleapis.com/css?family=Viga' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-    <style type="text/css">
-html, body, #map-canvas {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-#content {
-  font-family: "Montserrat";
-  font-size: 12px;
-  line-height: 1.6em;
-  letter-spacing: 0px;
-  font-weight: 400;
-  font-style: normal;
-}
-h1 {
-  font-family: "Viga";
-  font-size: 2em;
-  line-height: 1.2em;
-  text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: 2px;
-  font-weight: 300;
-  font-style: normal;
-}
-a {
-  color: #FF0000;
-  text-decoration: none;
-}
-    </style>
-    <script type="text/javascript"
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAuTIxF21XF_nfTdH-QJQQeSXSYgDn7RE">
-    </script>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
-    <script type="text/javascript" src="/static/add_map.js"></script>
-  </head>
-  <body ng-app="list">
-    <div id="map-canvas"></div>
-  </body>
+
+<head>
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+  <meta content="utf-8" http-equiv="encoding">
+  <link href="https://fonts.googleapis.com/css?family=Viga|Montserrat" rel="stylesheet">
+  <link href="/static/style.css" rel="stylesheet">
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAuTIxF21XF_nfTdH-QJQQeSXSYgDn7RE"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <script src="/static/add_map.js"></script>
+</head>
+
+<body>
+  <div id="map-canvas"></div>
+</body>
+
 </html>
