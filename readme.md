@@ -1,13 +1,23 @@
-#DxE Chapters Map
+DxE Chapters Map
+================
 
-`python generate_chapter_data.py` creates the data file `chapter_data.json`.
+Serves a map of DxE chapters generated dynamically from an Airtable.
 
-`chapter_map.html` includes all the imports, the google maps api, jquery, and
-`add_map.js`
+![Screenshot](http://i.imgur.com/czxr0gu.png)
 
-`add_map.js` loads in the data from `chapter_data.json` and adds circles to the
-map.
+This apps runs off Flask and internally calls [directactioneverywhere/dxe-airtable](https://github.com/directactioneverywhere/dxe-airtable/) to get the data.
 
+Usage
+-----
 
-To modify circle radius, starting zoom, and starting center, that's in
-`add_map.js`.
+Ensure that some environment variables required by dxe-airtable are set.
+
+* `AIRTABLE_API_KEY`
+* `AIRTABLE_BASE_ID`
+
+Then you can run the server with `python map/app.py`.
+
+Deployment
+----------
+
+This app is Dokku enabled.
