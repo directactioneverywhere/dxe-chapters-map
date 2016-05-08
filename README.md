@@ -21,7 +21,6 @@ This app is deployed with Dokku. [Learn about](https://github.com/directactionev
 
     dokku@dxetech.org:chapters-map
 
-
 License
 =======
 dxe-chapters-map is licensed under GNU GPL version 3.0. For the full license see the LICENSE file.
