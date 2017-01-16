@@ -1,6 +1,6 @@
 from flask import Flask, render_template, Response
 from werkzeug.contrib.cache import SimpleCache
-from dxe_airtable.generate_chapter_data import get_chapter_data
+from dxe_chapters_map.gsheet_chapter_data import get_chapter_data
 import json
 
 app = Flask(__name__)

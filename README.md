@@ -1,17 +1,17 @@
 DxE Chapters Map
 ================
-Serves a map of DxE chapters generated dynamically from an Airtable.
+Serves a map of DxE chapters generated dynamically from a Google Sheet.
 
 ![Screenshot](http://i.imgur.com/czxr0gu.png)
 
-This apps runs off Flask and internally calls [directactioneverywhere/dxe-airtable](https://github.com/directactioneverywhere/dxe-airtable/) to get the data.
+This apps runs off Flask.
 
 Local Development
 -----------------
 Ensure that some environment variables required by dxe-airtable are set.
 
-* `AIRTABLE_API_KEY`
-* `AIRTABLE_BASE_ID`
+* `GOOGLE_API_PRIVATE_KEY`
+* `GOOGLE_API_CLIENT_EMAIL`
 
 Then you can run the server with `python dxe_chapters_map/server.py`.
 
