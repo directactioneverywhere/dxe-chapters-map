@@ -1,5 +1,6 @@
 import re
 import os
+import base64
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 from oauth2client.crypt import Signer
@@ -8,7 +9,7 @@ SHEET_ID = '18iBUv_6dLe11qeEtMtM7f5sUIelHUFsALbYBZG2eFQ0'
 
 def get_client():
     scope = ['https://spreadsheets.google.com/feeds']
-    s = Signer.from_string(os.environ['GOOGLE_API_PRIVATE_KEY'].replace('\\n', '\n'))
+    s = Signer.from_string(base64.b64decode(os.environ['GOOGLE_API_PRIVATE_KEY']))
     credentials = ServiceAccountCredentials(
         os.environ['GOOGLE_API_CLIENT_EMAIL'],
         s,
@@ -57,4 +58,3 @@ def get_chapter_data():
         ret.append(retrow)
 
     return ret
-
