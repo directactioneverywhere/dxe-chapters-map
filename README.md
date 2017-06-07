@@ -10,7 +10,7 @@ Local Development
 -----------------
 Ensure that some environment variables required by dxe-airtable are set.
 
-* `GOOGLE_API_PRIVATE_KEY`
+* `GOOGLE_API_PRIVATE_KEY` (should be base64 encoded)
 * `GOOGLE_API_CLIENT_EMAIL`
 
 Then you can run the server with `python dxe_chapters_map/server.py`.
